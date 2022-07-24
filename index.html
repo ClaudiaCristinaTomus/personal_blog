@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema2</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+
+
+
+
+
+
+
+  <!----------------header cu flex ok dar nu e aranjat c/t ------------------->
+
+  <header>
+
+
+    <a class="logo">C | T </a>
+
+
+
+    <nav>
+
+
+      <ul class="nav_links">
+        <li><a class="active" href="#home">Home</a></li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+
+    </nav>
+
+
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!------------------------Body---------------------->
+
+
+
+
+  <div class="flex-container">
+
+    <div class="flex-item1">
+
+      <div class="imagine1">
+        <img src="img1.jpg" alt="Italy" style="width:600px;height:400px;">
+      </div>
+
+      <div class="link">
+        <a href="post-one.html">Click pentru a vedea prajitura 1</a>
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="flex-item2">
+      <div class="imagine2">
+        <img src="img2.jpeg" alt="Italy" style="width:600px;height:400px;">
+      </div>
+
+      <div class="link">
+        <a href="post-two.html">Click pentru a vedea prajitura 2</a>
+      </div>
+
+    </div>
+
+
+
+    <div class="flex-item2">
+
+      <div class="imagine2">
+        <img src="img2.jpeg" alt="Italy" style="width:600px;height:400px;">
+      </div>
+
+      <div class="link">
+        <a href="post-two.html">Click pentru a vedea prajitura 2</a>
+      </div>
+
+    </div>
+
+    <div class="flex-item2">
+
+      <div class="imagine2">
+        <img src="img2.jpeg" alt="Italy" style="width:600px;height:400px;">
+      </div>
+
+      <div class="link">
+        <a href="post-two.html">Click pentru a vedea prajitura 2</a>
+      </div>
+
+    </div>
+
+
+    <div class="flex-item2">
+
+      <div class="imagine2">
+        <img src="img2.jpeg" alt="Italy" style="width:600px;height:400px;">
+      </div>
+
+      <div class="link">
+        <a href="post-two.html">Click pentru a vedea prajitura 2</a>
+      </div>
+
+    </div>
+
+
+
+
+    <div class="flex-item2">
+
+      <div class="imagine2">
+        <img src="img2.jpeg" alt="Italy" style="width:600px;height:400px;">
+      </div>
+
+      <div class="link">
+        <a href="post-two.html">Click pentru a vedea prajitura 2</a>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><span
+      class="glyphicon glyphicon-arrow-up"></span></button>
+
+
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+
+
+</body>
+
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+
+</html>

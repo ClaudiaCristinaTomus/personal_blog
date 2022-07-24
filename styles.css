@@ -1,0 +1,381 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+li,a
+{
+	
+	font-size:16px;
+	text-decoration:none;
+	list-style-type:none;
+}
+
+
+header
+{
+  background-color: #f1f1f1;
+	color: black;
+	font-size:16px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding:15px;
+
+}
+
+
+
+
+.nav_links 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+   
+   
+    
+}
+
+
+
+
+.logo
+{
+	display: flex;
+ flex-wrap: nowrap;
+	margin-right:auto;
+  
+}
+
+
+header a {
+  
+  color: black;
+  text-align: center;
+  list-style-type:none;
+  text-decoration: none;
+  font-size: 18px; 
+  
+  border-radius: 15px;
+  padding:2px 20px;
+  
+  
+}
+
+
+
+header a:hover {
+  background-color: #ddd;
+  color: white;
+  list-style-type:none;
+  text-decoration: none;
+}
+
+header a.active {
+  background-color: black;
+  color: white;
+}
+
+
+@media screen and (max-width: 800px) {
+	.nav_links
+	{ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row
+	  
+	}
+	
+	
+	
+
+  header a.logo
+	{
+        display:none;
+	}
+}
+
+
+
+
+
+
+
+/*-----------------contact------------------*/
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: grey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  
+  padding: 40px;
+}
+h3
+{
+	padding: 70px;
+}
+
+
+
+/*----------------------post 1-----------------*/
+
+.img-container {
+  float: left;
+  width: 300px;
+  height:300px;
+  padding: 25px;
+  margin-left:25px;
+  margin-top:16px;
+}
+
+
+.paragraf
+{
+	margin-top:160px;
+	padding: 20px;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/*-------------body cu imagini-------------FARA FLEX----------------------*/
+
+/*---div.galerie {
+  margin: 25px;
+  border: 1px solid white;
+  float: left;
+  width: 600px;
+  margin-top:36px;
+  padding-top:100px;
+  
+
+  
+}
+
+.imagine1 .imagine2{
+  float: left;
+  width: 200px;
+  height:200px;
+  padding: 45px;
+  margin-left:25px;
+  margin-top:36px;
+
+}
+*/
+
+
+
+/*-------------body cu imagini-------------CU  FLEX----------------------*/
+
+
+/*.flex-container {
+  display: flex;
+    
+  
+}
+
+
+.flex-container > div {
+  
+  width:600px;
+  text-align: center;
+  line-height: 75px;
+  margin: 10px;
+  padding: 20px;
+  margin-top:120px;
+  font-size: 20px;
+}
+
+
+*/
+
+
+/*-------------body cu imagini-------------FLEX- Responsive  cu flex direction  ---------------------*/
+
+
+/*.flex-container {
+  display: flex;
+  flex-direction: row;
+  
+  font-size: 20px;
+  text-align: center;
+  margin-top:180px;
+  width:400px;
+ 
+  
+}
+
+.flex-item1 {
+  
+  padding: 6px;
+  flex: 50%;
+  
+ 
+}
+
+.flex-item2 {
+  
+  padding: 6px;
+  flex: 50%;
+  
+}
+*/
+
+
+
+
+
+/*------------------------------body cu imagini - flex responsive cu flex wrap----------------------------*/
+
+
+
+
+
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  
+  font-size: 20px;
+  text-align: center;
+  margin-top:180px;
+  margin-left:15px;
+  padding:20px 20px;
+  
+  
+}
+
+/*.flex-item1 {
+  
+  padding: 6px;
+  flex: 50%;
+  
+ 
+}
+
+.flex-item2 {
+  
+  padding: 6px;
+  flex: 50%;
+  
+}
+*/
+
+
+
+
+div.link{
+  padding: 45px;
+  text-align: center;
+  
+}
+
+.link a
+{
+	text-decoration: none;
+}
+
+
+
+
+/* -------------------------Footer -------------------*/
+
+
+.footer {
+   
+   background-color: #f1f1f1;
+   color: white;
+   text-align: center;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   
+   
+   
+}
+
+
+
+
+
+
+
+
+/* -------------------------Button -------------------*/
+
+
+
+
+
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #999;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
